@@ -1,0 +1,41 @@
+﻿###############################################################################
+# TPGrpToNciName function table			
+###############################################################################
+#
+# Name		:  TPGrpToNciName.ft
+# TPGrpToNciName 	:  TPGrpToNciName.dll
+# Date		:  12/21/2020
+# Author	:  Peter Evans
+# Language	: C++/Cli
+#
+###############################################################################
+
+
+######################
+# UNIQUE NAME
+######################
+APPLICATION "TPGrpToNciName"
+
+######################
+# TPGrpToNciName LOCATION
+######################
+#
+# Update paths below to match your install path and project name.
+FUNC_DLL   "CHOOKS\TPGrpToNciName.dll"
+RES_DLL    "SAME"
+dnRES_NAME "TPGrpToNciName.TPGrpToNciName"
+CATEGORY   "TPGrpToNciNames"
+
+##############################################################################
+# Public functions here
+##############################################################################
+#
+# The main system entry point defined in MastercamEntry.cpp
+
+FUNCTION NET "Run"
+  dnSPNG "Icon16"
+    dnLPNG "Icon32"
+    dnTIP  "RunTip"
+END_FUNCTION
+
+# EOF
